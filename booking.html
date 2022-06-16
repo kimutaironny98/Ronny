@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>book a room</title>
+	<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	width: 100%
+	height: 70px;
+	background: rgb(100,100,0);
+}
+.logo{
+	text-align: center;
+}
+.logo img{
+	text-align: center;
+	width: 160px;
+}
+ .nav-links{
+ 	flex: 1;
+ 	text-align: center;
+
+ }
+ .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+    text-align: top right;
+
+ }
+ .nav-links ul li a{
+ 	color: white;
+ 	text-decoration: none;
+ 	font-size: 18px;
+ }
+
+ .nav-links ul li::after{
+ 	content: ''; 
+ 	width: 0%;
+ 	height:2px;
+ 	background: purple;
+ 	display: block;
+ 	margin: auto;
+ 	transition: 0.5s;
+
+ }
+
+
+/* Change the link color to #111 (black) on hover */
+
+.nav-links li a:hover {
+    background-color: orange;
+}	
+.fom{
+    background-color: rgb(121, 3, 85);
+    height: 520px;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.fom input{
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 450px;
+    height: 30px;
+}
+.dropdown{
+    margin-left: 3%;
+    width: 450px;
+    height: 30px;
+}
+
+button{
+    color: #fff;
+    background-color: darkcyan;
+    width: 15%;
+    height: 40px;
+    margin-left: 0%;
+    margin-top: 3%;
+}
+	</style>
+</head>
+<body>
+		<section class="header">
+        <div class="logo">
+            <img src="images/star.jpg">
+        </div>
+        <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="room.html">ROOMS</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+        </div>  
+    </section>
+    <section class="fom" style="margin-top: 3%">
+		<form style="text-align: center;">
+			<h1 style="margin-top: 3%">BOOK YOUR ROOM</h1>
+			<h2></h2>
+			<h2>Check In</h2>
+			<input type="date" name="date" placeholder="date">
+			<h2>Check Out</h2>
+			<input type="date" name="date" placeholder="date">
+			<h2>ROOM</h2><br/>
+			 <select class="dropdown" name = "dropdown">
+			 	<option value = "ROOM 1" selected>ROOM 1</option>
+                <option value = "ROOM 2">ROOM 2</option>
+                <option value = "ROOM 3">ROOM 3</option>
+                <option value = "ROOM 4">ROOM 4</option>
+                <option value = "ROOM 5">ROOM 5</option>
+                <option value = "ROOM 6">ROOM 6</option>
+                <option value = "ROOM 7">ROOM 7</option>
+                <option value = "ROOM 7">ROOM 8</option>
+             </select><br/>
+             <input type="email" name="email" placeholder="Email"><br/>
+             <input type="text" name="text" placeholder="Promo Code"><br/>
+             <button>CHECK AVALABILITY</button>
+		</form>
+	</section>
+</body>
+</html>
